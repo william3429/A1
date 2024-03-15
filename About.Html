@@ -8,6 +8,33 @@
             background-color: green; /* Set background color to green */
             padding-top: 20px; /* Add padding to top */
             font-family: Arial, sans-serif; /* Set font family */
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+        }
+        #menu {
+            background-color: white;
+            padding: 10px 0;
+            position: fixed; /* Position the menu fixed */
+            top: 0; /* Place it at the top */
+            width: 100%; /* Make it full width */
+            z-index: 999; /* Ensure it's above other content */
+        }
+        #menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        #menu ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        #menu ul li a {
+            text-decoration: none;
+            color: black;
+            transition: color 0.3s; /* Add transition effect for smoother color change */
+        }
+        #menu ul li a:hover {
+            color: #888; /* Change color to grey on hover */
         }
         .container {
             display: flex;
@@ -16,7 +43,7 @@
             flex-wrap: wrap;
             gap: 20px;
             max-width: 800px;
-            margin: 0 auto;
+            margin: 70px auto 0; /* Adjust margin to accommodate the fixed menu */
             background-color: white;
             padding: 20px;
             border-radius: 10px;
@@ -34,6 +61,17 @@
     </style>
 </head>
 <body>
+    <div id="menu">
+        <ul>
+            <li><a href="https://william3429.github.io/A1/Home.Html">Home</a></li>
+            <li><a href="https://william3429.github.io/A1/About.Html">About Me</a></li>
+            <li><a href="https://william3429.github.io/A1/Course.Html">Coursework</a></li>
+            <li><a href="https://william3429.github.io/A1/Artifact.Html">Artifacts</a></li>
+            <li><a href="https://william3429.github.io/A1/mod.Html">Module Assignments</a></li>
+            <li><a href="https://william3429.github.io/A1/Contact.Html">Contact Me</a></li>
+            <li><a href="https://william3429.github.io/A1/creative.Html">Creative Page</a></li>
+        </ul>
+    </div>
     <div class="container">
         <div class="top-right">
             <img src="https://media.giphy.com/media/EA44qY4xu4UiA/giphy.gif" alt="GIF">
@@ -48,6 +86,5 @@
     </div>
 </body>
 </html>
-
 
 
