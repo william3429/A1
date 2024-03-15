@@ -1,32 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to My Portfolio</title>
-    <style>
-        body {
-            background-color: #4CAF50; /* Change this to your desired background color */
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        .message {
-            text-align: center;
-            font-size: 24px;
-            padding: 20px;
-            background-color: #ffffff; /* Change this to your desired message background color */
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Welcome to My Portfolio</title>
+<style>
+    body {
+        background-color: #00FF00; /* Green background color */
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #menu {
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+        text-align: center;
+    }
+    #menu ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    #menu ul li {
+        display: inline;
+        margin-right: 10px;
+    }
+    #menu ul li a {
+        text-decoration: none;
+        color: black; /* Change the color of the menu links */
+        padding: 10px; /* Add padding to the menu links */
+    }
+    #menu ul li a:hover {
+        background-color: rgba(0, 128, 0, 0.5); /* Change background color on hover */
+        color: white; /* Change text color on hover */
+    }
+    .title {
+        font-size: 36px;
+        margin-top: 20px;
+    }
+    .message-container {
+        background-color: white; /* White background color for the container */
+        border-radius: 10px;
+        padding: 20px;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .message {
+        font-size: 24px;
+    }
+</style>
 </head>
 <body>
-    <div class="message">
-        Welcome to my corner of the web! As you step into my digital space, you're embarking on a journey through my DEV109 class final project—an interactive portfolio encapsulating my dedication to web development. Here, you'll find a collection of my proudest creations, each representing a labor of love and a testament to my growth as a developer. From coding challenges to intricate applications, every project showcased here reflects not just my technical prowess, but also my unwavering passion for crafting meaningful solutions. So, take your time to explore, engage, and perhaps even find inspiration within these digital walls. Thank you for joining me on this adventure—I hope you enjoy the ride!
-    </div>
+<!-- Horizontal Menu -->
+<div id="menu">
+  <ul>
+    <li><a href="https://william3429.github.io/A1/Home.Html">Home</a></li>
+    <li><a href="https://william3429.github.io/A1/About.Html">About Me</a></li>
+    <li><a href="https://william3429.github.io/A1/Course.Html">Coursework</a></li>
+    <li><a href="https://william3429.github.io/A1/Artifact.Html">Artifacts</a></li>
+    <li><a href="https://william3429.github.io/A1/mod.Html">Module Assignments</a></li>
+    <li><a href="https://william3429.github.io/A1/Contact.Html">Contact Me</a></li>
+    <li><a href="https://william3429.github.io/A1/creative.Html">Creative Page</a></li>
+  </ul>
+</div>
+
+<div class="title">
+    HOME
+</div>
+
+<div class="message-container">
+    <p class="message">Welcome to my corner of the web! As you step into my digital space, you're embarking on a journey through my DEV109 class final project—an interactive portfolio encapsulating my dedication to web development. Here, you'll find a collection of my proudest creations, each representing a labor of love and a testament to my growth as a developer. From coding challenges to intricate applications, every project showcased here reflects not just my technical prowess, but also my unwavering passion for crafting meaningful solutions. So, take your time to explore, engage, and perhaps even find inspiration within these digital walls. Thank you for joining me on this adventure—I hope you enjoy the ride!</p>
+</div>
+
 </body>
 </html>
+
