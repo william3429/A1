@@ -6,7 +6,8 @@
         body {
             background-color: green; /* Set background color to green */
             color: white; /* Set text color to white */
-            padding: 20px; /* Add some padding for better readability */
+            padding: 0;
+            margin: 0; /* Remove default margin */
             text-align: center; /* Center align all text */
         }
         .textbox {
@@ -18,9 +19,48 @@
             text-align: left; /* Left align text inside the textbox */
             display: inline-block; /* Make the textbox inline block to center it */
         }
+        /* Style for the horizontal menu */
+        #menu {
+            background-color: white; /* Background color of the menu */
+            position: fixed; /* Position the menu fixed at the top */
+            width: 100%; /* Set width to 100% */
+            top: 0; /* Position at the very top */
+            z-index: 1000; /* Ensure menu is on top of other elements */
+        }
+        #menu ul {
+            list-style-type: none; /* Remove default bullet points */
+            margin: 0;
+            padding: 0;
+            text-align: center; /* Center align menu items */
+        }
+        #menu ul li {
+            display: inline; /* Display menu items inline */
+        }
+        #menu ul li a {
+            display: inline-block; /* Display menu links as blocks */
+            color: black; /* Text color of menu links */
+            padding: 14px 20px; /* Padding around menu links */
+            text-decoration: none; /* Remove underline from links */
+        }
+        #menu ul li a:hover {
+            background-color: #ddd; /* Background color of menu links on hover */
+        }
     </style>
 </head>
 <body>
+    <!-- Horizontal Menu -->
+    <div id="menu">
+        <ul>
+            <li><a href="https://william3429.github.io/A1/Home.Html">Home</a></li>
+            <li><a href="https://william3429.github.io/A1/About.Html">About Me</a></li>
+            <li><a href="https://william3429.github.io/A1/Course.Html">Coursework</a></li>
+            <li><a href="https://william3429.github.io/A1/Artifact.Html">Artifacts</a></li>
+            <li><a href="https://william3429.github.io/A1/mod.Html">Module Assignments</a></li>
+            <li><a href="https://william3429.github.io/A1/Contact.Html">Contact Me</a></li>
+            <li><a href="https://william3429.github.io/A1/creative.Html">Creative Page</a></li>
+        </ul>
+    </div>
+
     <div class="textbox">
         <h1>Coursework</h1>
         <h2>Intro to Astronomy</h2>
@@ -40,6 +80,8 @@
         Your browser does not support the audio element.
     </audio>
 </body>
+</html>
+
 </html>
 
 
