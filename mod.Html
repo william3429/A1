@@ -6,38 +6,82 @@
         body {
             background-color: green;
             color: white;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
             display: flex;
             flex-direction: column;
             align-items: center;
-            height: 100vh; /* This ensures the content is vertically centered */
+            height: 100vh;
         }
         .header {
-            font-size: 32px; /* Increased font size for the header */
+            font-size: 32px;
             margin-bottom: 20px;
-            text-decoration: underline; /* Underline for the header */
+            text-decoration: underline;
         }
         .textbox {
             background-color: white;
             padding: 20px;
             text-align: center;
-            display: flex; /* Display modules in a row */
-            justify-content: center; /* Center modules horizontally */
+            display: flex;
+            justify-content: center;
+            border-radius: 10px;
+            margin-top: 20px;
         }
         .textbox ul {
-            list-style: none; /* Remove bullet points from the list */
+            list-style: none;
             padding: 0;
         }
         .textbox li {
-            margin: 0 10px; /* Add some spacing between modules */
+            margin: 0 10px;
         }
         /* Style the hyperlink */
         a {
-            color: black; /* Change link color to black for better contrast */
-            text-decoration: underline; /* Underline for links */
+            color: black;
+            text-decoration: underline;
+        }
+        /* Style for the horizontal menu */
+        #menu {
+            background-color: white; /* Background color of the menu */
+            position: fixed; /* Position the menu fixed at the top */
+            width: 100%; /* Set width to 100% */
+            top: 0; /* Position at the very top */
+            z-index: 1000; /* Ensure menu is on top of other elements */
+        }
+        #menu ul {
+            list-style-type: none; /* Remove default bullet points */
+            margin: 0;
+            padding: 0;
+            text-align: center; /* Center align menu items */
+        }
+        #menu ul li {
+            display: inline; /* Display menu items inline */
+        }
+        #menu ul li a {
+            display: inline-block; /* Display menu links as blocks */
+            color: black; /* Text color of menu links */
+            padding: 14px 20px; /* Padding around menu links */
+            text-decoration: none; /* Remove underline from links */
+        }
+        #menu ul li a:hover {
+            background-color: #ddd; /* Background color of menu links on hover */
         }
     </style>
 </head>
 <body>
+    <!-- Horizontal Menu -->
+    <div id="menu">
+        <ul>
+            <li><a href="https://william3429.github.io/A1/Home.Html">Home</a></li>
+            <li><a href="https://william3429.github.io/A1/About.Html">About Me</a></li>
+            <li><a href="https://william3429.github.io/A1/Course.Html">Coursework</a></li>
+            <li><a href="https://william3429.github.io/A1/Artifact.Html">Artifacts</a></li>
+            <li><a href="https://william3429.github.io/A1/mod.Html">Module Assignments</a></li>
+            <li><a href="https://william3429.github.io/A1/Contact.Html">Contact Me</a></li>
+            <li><a href="https://william3429.github.io/A1/creative.Html">Creative Page</a></li>
+        </ul>
+    </div>
+
     <div class="header">
         Modules
     </div>
