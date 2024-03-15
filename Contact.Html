@@ -7,6 +7,7 @@
             background-color: green;
             padding: 20px;
             text-align: center; /* Center align the text */
+            margin: 0; /* Remove default margin */
         }
 
         form {
@@ -21,9 +22,55 @@
         h1 {
             font-size: 36px; /* Set font size to 36px */
         }
+
+        /* Styling for the menu */
+        #menu {
+            position: fixed; /* Set menu position to fixed */
+            top: 0; /* Set menu to the very top */
+            width: 100%; /* Set menu width to 100% */
+            background-color: white;
+            padding: 10px 0;
+            border-bottom: 2px solid #ccc;
+        }
+
+        #menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        #menu ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        #menu ul li a {
+            text-decoration: none;
+            color: black;
+            padding: 5px 10px;
+        }
+
+        #menu ul li a:hover {
+            background-color: #ccc;
+            color: white;
+            border-radius: 5px;
+        }
     </style>
 </head>
 <body>
+    <!-- Horizontal Menu -->
+    <div id="menu">
+        <ul>
+            <li><a href="https://william3429.github.io/A1/Home.Html">Home</a></li>
+            <li><a href="https://william3429.github.io/A1/About.Html">About Me</a></li>
+            <li><a href="https://william3429.github.io/A1/Course.Html">Coursework</a></li>
+            <li><a href="https://william3429.github.io/A1/Artifact.Html">Artifacts</a></li>
+            <li><a href="https://william3429.github.io/A1/mod.Html">Module Assignments</a></li>
+            <li><a href="https://william3429.github.io/A1/Contact.Html">Contact Me</a></li>
+            <li><a href="https://william3429.github.io/A1/creative.Html">Creative Page</a></li>
+        </ul>
+    </div>
+
     <h1>Contact Us</h1>
     
     <!-- Contact form -->
