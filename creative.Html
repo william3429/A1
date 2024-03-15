@@ -19,7 +19,7 @@
   }
   .header h1 {
     font-size: 36px;
-    margin: 0;
+    margin: 20px 0; /* Add margin to the top and bottom */
   }
   .textbox {
     background-color: white;
@@ -40,9 +40,56 @@
     margin-top: 20px;
     margin-bottom: 20px;
   }
+
+  /* Styling for the menu */
+  #menu {
+    position: fixed; /* Set menu position to fixed */
+    top: 0; /* Set menu to the very top */
+    width: 100%; /* Set menu width to 100% */
+    background-color: white;
+    padding: 10px 0;
+    border-bottom: 2px solid #ccc;
+    text-align: center; /* Center align the menu items */
+  }
+
+  #menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  #menu ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+
+  #menu ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;
+  }
+
+  #menu ul li a:hover {
+    background-color: #ccc;
+    color: white;
+    border-radius: 5px;
+  }
 </style>
 </head>
 <body>
+
+<!-- Horizontal Menu -->
+<div id="menu">
+  <ul>
+    <li><a href="https://william3429.github.io/A1/Home.Html">Home</a></li>
+    <li><a href="https://william3429.github.io/A1/About.Html">About Me</a></li>
+    <li><a href="https://william3429.github.io/A1/Course.Html">Coursework</a></li>
+    <li><a href="https://william3429.github.io/A1/Artifact.Html">Artifacts</a></li>
+    <li><a href="https://william3429.github.io/A1/mod.Html">Module Assignments</a></li>
+    <li><a href="https://william3429.github.io/A1/Contact.Html">Contact Me</a></li>
+    <li><a href="https://william3429.github.io/A1/creative.Html">Creative Page</a></li>
+  </ul>
+</div>
 
 <div class="header">
   <h1>Learn about Turtles</h1>
@@ -69,4 +116,3 @@
 
 </body>
 </html>
-
