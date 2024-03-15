@@ -5,40 +5,89 @@
     <style>
         body {
             background-color: #4CAF50; /* Green background */
-            padding: 20px; /* Add some padding to the body */
+            padding: 0; /* Remove default padding */
+            margin: 0; /* Remove default margin */
+            box-sizing: border-box; /* Include padding and border in the element's total width and height */
+            text-align: center; /* Center align text */
+        }
+        .container {
+            background-color: green; /* Green background */
+            padding: 20px; /* Add padding to the container */
             box-sizing: border-box; /* Include padding and border in the element's total width and height */
         }
         .textbox {
             background-color: white; /* White text box */
             padding: 20px; /* Add padding to the text box */
             border-radius: 10px; /* Add some rounded corners */
+            display: inline-block; /* Display as inline-block */
+        }
+        /* Style for the horizontal menu */
+        #menu {
+            background-color: white; /* Background color of the menu */
+            position: fixed; /* Position the menu fixed at the top */
+            width: 100%; /* Set width to 100% */
+            top: 0; /* Position at the very top */
+            z-index: 1000; /* Ensure menu is on top of other elements */
+        }
+        #menu ul {
+            list-style-type: none; /* Remove default bullet points */
+            margin: 0;
+            padding: 0;
+            text-align: center; /* Center align menu items */
+        }
+        #menu ul li {
+            display: inline; /* Display menu items inline */
+        }
+        #menu ul li a {
+            display: inline-block; /* Display menu links as blocks */
+            color: black; /* Text color of menu links */
+            padding: 14px 20px; /* Padding around menu links */
+            text-decoration: none; /* Remove underline from links */
+        }
+        #menu ul li a:hover {
+            background-color: #ddd; /* Background color of menu links on hover */
         }
     </style>
 </head>
 <body>
-    <div class="textbox"> <!-- White text box -->
-        <h1 style="text-align: center;">Artifacts</h1>
-        <div style="text-align: center;">
-            <a href="https://recipes01.w3spaces.com/artifact.01.html" style="display: inline-block; text-align: left;">
-                <img src="https://th.bing.com/th/id/R.8d2ae7f8eef8c92f163db821de2254c9?rik=Yq6vt%2fa%2fr8NLeg&riu=http%3a%2f%2fmedia.istockphoto.com%2fvectors%2fresume-vector-id515856714%3fk%3d6%26m%3d515856714%26s%3d170667a%26w%3d0%26h%3dTOmRMkJ1XD-Oylwt5aInXkHnsyeQZXh4o16IraRjp8M%3d&ehk=2A%2fyKVHMPKe5AKQuxlQLRgUQqPHZnfB%2fexuPCKXLsiA%3d&risl=&pid=ImgRaw&r=0" alt="Resume Image" width="150">
-                <p>Resume</p>
-            </a>
-            <a href="https://www.bing.com/images/search?view=detailV2&ccid=%2fZhwzqiq&id=A7A8F669EAF79A9D32C7DDA74F336489BB50B555&thid=OIP._ZhwzqiqNuy3Zg4rJicv2wHaEy&mediaurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.fd9870cea8aa36ecb7660e2b26272fdb%3frik%3dVbVQu4lkM0%252bn3Q%26riu%3dhttp%253a%252f%252fclipart-library.com%252fimg%252f711057.jpg%26ehk%3dwXb9%252bUdHLPnaAOiG9e4Y7%252ft53TUCwQmaJe7IyaGClhM%253d%26risl%3d%26pid%3dImgRaw%26r%3d0" style="display: inline-block; text-align: left;">
-                <img src="https://th.bing.com/th/id/R.fd9870cea8aa36ecb7660e2b26272fdb?rik=VbVQu4lkM0%2bn3Q&riu=http%3a%2f%2fclipart-library.com%2fimg%2f711057.jpg&ehk=wXb9%2bUdHLPnaAOiG9e4Y7%2ft53TUCwQmaJe7IyaGClhM%3d&risl=&pid=ImgRaw&r=0" alt="Chessboard Image" width="150">
-                <p>Chessboard</p>
-            </a>
-            <a href="https://william3429.github.io/devclass1/A3.Html" style="display: inline-block; text-align: left;">
-                <img src="https://th.bing.com/th/id/OIP.mjODAWt8jZdSQtkV7mUGqQAAAA?pid=ImgDet&w=184&h=198&c=7&dpr=2" alt="Rhombus Image" width="150">
-                <p>Create Rhombus</p>
-            </a>
-            <a href="https://william3429.github.io/devclass1/" style="display: inline-block; text-align: left;">
-                <img src="https://www.bing.com/th/id/OGC.7c926b80ad0a467074e9b99732f8c257?pid=1.7&rurl=https%3a%2f%2f38.media.tumblr.com%2fa75f913409fc596a0dde6f00af76cd34%2ftumblr_nkk2vtyXSZ1rkvimbo1_1280.gif&ehk=N%2bpOwsv5Mom%2f5F%2fTe4qf0K5QagwPXaB0zgAdRJYpSdk%3d" alt="Contact Page Image" width="150">
-                <p>Contact Page</p>
-            </a>
-            <a href="https://william3429.github.io/devclass1/A5.Html" style="display: inline-block; text-align: left;">
-                <img src="https://th.bing.com/th/id/R.ff10c8c0879c141361823521caeedb40?rik=Nbr3zTvg1ASpog&pid=ImgRaw&r=0" alt="Slideshow Image" width="150">
-                <p>Slideshow</p>
-            </a>
+    <!-- Horizontal Menu -->
+    <div id="menu">
+        <ul>
+            <li><a href="https://william3429.github.io/A1/Home.Html">Home</a></li>
+            <li><a href="https://william3429.github.io/A1/About.Html">About Me</a></li>
+            <li><a href="https://william3429.github.io/A1/Course.Html">Coursework</a></li>
+            <li><a href="https://william3429.github.io/A1/Artifact.Html">Artifacts</a></li>
+            <li><a href="https://william3429.github.io/A1/mod.Html">Module Assignments</a></li>
+            <li><a href="https://william3429.github.io/A1/Contact.Html">Contact Me</a></li>
+            <li><a href="https://william3429.github.io/A1/creative.Html">Creative Page</a></li>
+        </ul>
+    </div>
+
+    <div class="container"> <!-- Green container -->
+        <div class="textbox"> <!-- White text box -->
+            <h1 style="text-align: center;">Artifacts</h1>
+            <div style="text-align: center;">
+                <a href="https://recipes01.w3spaces.com/artifact.01.html" style="display: inline-block; text-align: left;">
+                    <img src="https://th.bing.com/th/id/R.8d2ae7f8eef8c92f163db821de2254c9?rik=Yq6vt%2fa%2fr8NLeg&riu=http%3a%2f%2fmedia.istockphoto.com%2fvectors%2fresume-vector-id515856714%3fk%3d6%26m%3d515856714%26s%3d170667a%26w%3d0%26h%3dTOmRMkJ1XD-Oylwt5aInXkHnsyeQZXh4o16IraRjp8M%3d&ehk=2A%2fyKVHMPKe5AKQuxlQLRgUQqPHZnfB%2fexuPCKXLsiA%3d&risl=&pid=ImgRaw&r=0" alt="Resume Image" width="150">
+                    <p>Resume</p>
+                </a>
+                <a href="https://www.bing.com/images/search?view=detailV2&ccid=%2fZhwzqiq&id=A7A8F669EAF79A9D32C7DDA74F336489BB50B555&thid=OIP._ZhwzqiqNuy3Zg4rJicv2wHaEy&mediaurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.fd9870cea8aa36ecb7660e2b26272fdb%3frik%3dVbVQu4lkM0%252bn3Q%26riu%3dhttp%253a%252f%252fclipart-library.com%252fimg%252f711057.jpg%26ehk%3dwXb9%252bUdHLPnaAOiG9e4Y7%252ft53TUCwQmaJe7IyaGClhM%253d%26risl%3d%26pid%3dImgRaw%26r%3d0" style="display: inline-block; text-align: left;">
+                    <img src="https://th.bing.com/th/id/R.fd9870cea8aa36ecb7660e2b26272fdb?rik=VbVQu4lkM0%2bn3Q&riu=http%3a%2f%2fclipart-library.com%2fimg%2f711057.jpg&ehk=wXb9%2bUdHLPnaAOiG9e4Y7%2ft53TUCwQmaJe7IyaGClhM%3d&risl=&pid=ImgRaw&r=0" alt="Chessboard Image" width="150">
+                    <p>Chessboard</p>
+                </a>
+                <a href="https://william3429.github.io/devclass1/A3.Html" style="display: inline-block; text-align: left;">
+                    <img src="https://th.bing.com/th/id/OIP.mjODAWt8jZdSQtkV7mUGqQAAAA?pid=ImgDet&w=184&h=198&c=7&dpr=2" alt="Rhombus Image" width="150">
+                    <p>Create Rhombus</p>
+                </a>
+                <a href="https://william3429.github.io/devclass1/" style="display: inline-block; text-align: left;">
+                    <img src="https://www.bing.com/th/id/OGC.7c926b80ad0a467074e9b99732f8c257?pid=1.7&rurl=https%3a%2f%2f38.media.tumblr.com%2fa75f913409fc596a0dde6f00af76cd34%2ftumblr_nkk2vtyXSZ1rkvimbo1_1280.gif&ehk=N%2bpOwsv5Mom%2f5F%2fTe4qf0K5QagwPXaB0zgAdRJYpSdk%3d" alt="Contact Page Image" width="150">
+                    <p>Contact Page</p>
+                </a>
+                <a href="https://william3429.github.io/devclass1/A5.Html" style="display: inline-block; text-align: left;">
+                    <img src="https://th.bing.com/th/id/R.ff10c8c0879c141361823521caeedb40?rik=Nbr3zTvg1ASpog&pid=ImgRaw&r=0" alt="Slideshow Image" width="150">
+                    <p>Slideshow</p>
+                </a>
+            </div>
         </div>
     </div>
 </body>
